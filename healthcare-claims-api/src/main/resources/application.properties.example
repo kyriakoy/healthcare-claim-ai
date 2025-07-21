@@ -1,0 +1,21 @@
+# Server Configuration
+server.port=8080
+
+# Spring AI Configuration for OpenRouter (latest)
+spring.ai.openai.api-key=
+
+spring.ai.openai.base-url=https://openrouter.ai/api
+spring.ai.openai.chat.options.model=google/gemini-2.0-flash-001
+spring.ai.openai.chat.options.temperature=0.2
+
+# H2 Database Configuration
+spring.datasource.url=jdbc:h2:mem:claimsdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.jpa.hibernate.ddl-auto=create-drop
+
+logging.level.org.springframework=DEBUG
+logging.level.org.springframework.ai=DEBUG
