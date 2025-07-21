@@ -51,7 +51,9 @@ A modern React-based web application that provides an intuitive interface for cl
 ### 1. Backend Setup
 ```bash
 cd healthcare-claims-api
-# Configure your OpenAI API key in src/main/resources/application.properties
+# Copy the example properties file and edit it with your settings
+cp src/main/resources/application.properties.example src/main/resources/application.properties
+# Configure your OpenAI API key and other settings in src/main/resources/application.properties
 mvn clean package
 java -jar target/healthcare-claims-api-0.0.1-SNAPSHOT.jar
 ```
@@ -103,7 +105,10 @@ healthcare-claim-ai/
 ## 🔧 Configuration
 
 ### Backend Configuration
-Configure the following in `healthcare-claims-api/src/main/resources/application.properties`:
+- Edit your configuration in `healthcare-claims-api/src/main/resources/application.properties` (not committed to git)
+- Use `application.properties.example` as a template for new environments or developers
+
+Configure the following in your `application.properties` file:
 ```properties
 spring.ai.openai.api-key=your-openai-api-key-here
 ```
@@ -119,17 +124,4 @@ The frontend automatically connects to the backend API running on `localhost:808
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-For questions and support:
-- Check the component-specific README files for detailed setup instructions
-- Review the API documentation for endpoint details
-- Examine the AI workflow documentation for understanding the LLM integration
-
 ---
-
-**Built with ❤️ for healthcare innovation** 
