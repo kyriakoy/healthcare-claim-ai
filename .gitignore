@@ -133,6 +133,7 @@ application-local.properties
 application-dev.properties
 **/application-*.yml
 **/application-*.yaml
+application.properties
 
 # ===== Development Tools =====
 # Coverage reports

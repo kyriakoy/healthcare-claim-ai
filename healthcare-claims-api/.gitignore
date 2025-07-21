@@ -25,9 +25,8 @@ Thumbs.db
 
 # Environment
 .env
-
-# Application properties (if you want to keep secrets out of git)
-# src/main/resources/application.properties
+application.properties
+src/main/resources/application.properties
 
 # Others
 *.swp
